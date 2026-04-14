@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Background Switcher</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Image Background Switcher</h1>
+
+      <form id="background-form" class="form">
+        <label class="field" for="image-path">
+          <span class="label">Image Path</span>
+          <input
+            id="image-path"
+            name="imagePath"
+            type="text"
+            placeholder="/path/to/image.jpg"
+          />
+        </label>
+
+        <label class="field" for="callout-position">
+          <span class="label">Callout Position</span>
+          <select id="callout-position" name="calloutPosition">
+            <option value="left">left</option>
+            <option value="right">right</option>
+          </select>
+        </label>
+
+        <label class="field" for="background-position">
+          <span class="label">Background Position</span>
+          <select id="background-position" name="backgroundPosition">
+            <option value="left top" selected>left top</option>
+            <option value="left center">left center</option>
+            <option value="left bottom">left bottom</option>
+            <option value="right top">right top</option>
+            <option value="right center">right center</option>
+            <option value="right bottom">right bottom</option>
+            <option value="center top">center top</option>
+            <option value="center center">center center</option>
+            <option value="center bottom">center bottom</option>
+          </select>
+        </label>
+
+        <button id="apply-button" type="submit">Apply</button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite">Ready.</p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
