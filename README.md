@@ -2,6 +2,8 @@
 
 A basic Chrome extension for swapping a hero/banner background image on the current page from the extension popup.
 
+[Case study and technical deep dive](https://www.bobconlon.com/projects/chrome-extension-case-study/)
+
 ## What it does
 
 The popup lets you:
